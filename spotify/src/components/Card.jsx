@@ -1,21 +1,19 @@
+import "../assets/css/card.css";
+
 const Card = ({ artistData, album }) => {
   return (
     <>
       {artistData.map((song) => (
         <div
-          className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-2"
           key={song.id}
+          class="song-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-2 pt-3"
         >
-          <div className="card pt-2 rp-card">
-            <img
-              src={song.album.cover}
-              alt="..."
-              className="img-fluid h-100 w-100"
-            />
-            <div className="card-body card-text-paragraph">
-              <p className="pb-0 mb-1">{song.album.title}</p>
-              {/* <small>{song.album.cover}</small> */}
-            </div>
+          <div className="d-flex justify-content-center">
+            <img src={song.album.cover} alt="..." className="img-fluid w-100" />
+          </div>
+          <div class="card-body mt-2">
+            <p className="pb-0 mb-1 card-text text-white">{song.album.title}</p>
+            <small className="card-text text-white">Bohemian Rhapsody</small>
           </div>
         </div>
       ))}

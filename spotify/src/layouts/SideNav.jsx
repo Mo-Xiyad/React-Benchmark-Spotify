@@ -1,6 +1,7 @@
 import "../assets/css/SideNav.css";
+import { withRouter, Link } from "react-router-dom";
 
-const SideNav = () => {
+const SideNav = ({location}) => {
   return (
     <div className="side-nav">
       <div className="py-3 px-2 m-2">
@@ -15,7 +16,7 @@ const SideNav = () => {
       </div>
       <ul>
         <li>
-          <a className="active" href="#Home">
+          <Link to={'/home'} className={location.pathname === '/home' ? 'active mb-1' : 'mb-0'}>
             {" "}
             <span className="pr-2">
               <svg
@@ -31,10 +32,10 @@ const SideNav = () => {
               </svg>
             </span>{" "}
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="input-group mt-1 mb-1" href="#Search">
+            <Link to={'/search'} className={location.pathname === '/search' ? 'active input-group mt-1 mb-1' : 'input-group mt-1 mb-1'}>
             <svg
               viewBox="0 0 512 512"
               width={24}
@@ -50,7 +51,8 @@ const SideNav = () => {
             <small className="ml-2">
               <strong>Search</strong>
             </small>
-          </a>
+          
+              </Link>
         </li>
         <li>
           <a className href="#about">
@@ -146,4 +148,4 @@ const SideNav = () => {
   );
 };
 
-export default SideNav;
+export default withRouter(SideNav);

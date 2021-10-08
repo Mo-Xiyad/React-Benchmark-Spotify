@@ -32,6 +32,7 @@ h6 {
 }
 .content-box {
   margin-left: 15%;
-  height: 80.6vh;
-  border: 1px solid white;
+  margin-bottom: -9px;
+  /* height: 88.6vh; */
+  /* border: 1px solid white; */
 }
