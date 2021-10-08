@@ -17,19 +17,28 @@ nav.bg-light {
 
 .dropdown-toggle {
   font-weight: bolder;
+  background-color: rgb(41, 41, 41) !important ;
+  border: none;
 }
-
 .dropdown-toggle,
 .dropdown-menu {
   background-color: rgb(18, 18, 18);
+}
+
+.dropdown-toggle:hover {
+  background-color: #414141 !important;
   color: rgb(255, 255, 255);
 }
 
 .dropdown-item {
   color: rgb(255, 255, 255);
 }
+.dropdown-item:hover {
+  color: rgb(255, 255, 255);
+  background-color: #414141;
+}
 
 .dropdown-toggle:hover {
   color: rgb(255, 255, 255) !important;
-  background-color: rgba(5, 5, 5, 0.5);
+  /* background-color: rgba(5, 5, 5, 0.5); */
 }

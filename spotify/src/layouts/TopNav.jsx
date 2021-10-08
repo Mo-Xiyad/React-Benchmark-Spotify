@@ -4,7 +4,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 const TopNav = () => {
   return (
-    <div className="main-nav-bar">
+    <div className="main-nav-bar pt-3">
       <nav className="navbar navbar-expand-lg navbar-light bg-light pb-3 position-relative">
         <div className="btn-group ml-auto my-lg-0 d-flex position-relative pr-3">
           <Dropdown>
@@ -16,7 +16,7 @@ const TopNav = () => {
               Diego 'Ziba' Ba...
             </Dropdown.Toggle>
 
-            <Dropdown.Menu className="super-colors">
+            <Dropdown.Menu>
               <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
               <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
               <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>

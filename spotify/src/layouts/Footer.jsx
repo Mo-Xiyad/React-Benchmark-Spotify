@@ -8,14 +8,14 @@ import Repeat from "../assets/img/footer/Repeat.png";
 const Footer = () => {
   return (
     <div className="player container-fluid fixed-bottom bg-container pt-1">
-      <div className="row flex-nowrap justify-content-between playBar py-3 mt-3">
+      <div className="row flex-nowrap justify-content-between playBar mt-3">
         <div className="col-auto">
           <div className="playerArtistInfo d-flex">
             <div className="d-flex flex-column pl-2"></div>
           </div>
         </div>
-        <div className="col-6">
-          <div className="playerControls w-50 d-flex justify-content-between">
+        <div className="col-6 pl-5">
+          <div className="playerControls w-50 d-flex justify-content-between pl-5">
             <div>
               <img src={Shuffle} alt="shuffle" />
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
               <img src={Repeat} alt="repeat" />
             </div>
           </div>
-          <div className="progressContainer d-flex align-items-center">
+          <div className="progressContainer d-flex align-items-center ml-5">
             <span className="currentTime">00:00</span>
             <div className="progress w-100">
               <div
