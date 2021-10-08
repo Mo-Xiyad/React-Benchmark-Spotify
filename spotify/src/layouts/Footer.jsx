@@ -1,7 +1,14 @@
+import "../assets/css/Footer.css";
+import Shuffle from "../assets/img/footer/Shuffle.png";
+import Previous from "../assets/img/footer/Previous.png";
+import Play from "../assets/img/footer/Play.png";
+import Pause from "../assets/img/footer/Pause.png";
+import Next from "../assets/img/footer/Next.png";
+import Repeat from "../assets/img/footer/Repeat.png";
 const Footer = () => {
   return (
-    <div className="player container-fluid fixed-bottom position-sticky bg-container pt-1">
-      <div className="row flex-nowrap justify-content-between playBar py-3">
+    <div className="player container-fluid fixed-bottom bg-container pt-1">
+      <div className="row flex-nowrap justify-content-between playBar py-3 mt-3">
         <div className="col-auto">
           <div className="playerArtistInfo d-flex">
             <div className="d-flex flex-column pl-2"></div>
@@ -10,22 +17,19 @@ const Footer = () => {
         <div className="col-6">
           <div className="playerControls w-50 d-flex justify-content-between">
             <div>
-              <img src="./assets/img/playerbuttons/Shuffle.png" alt="shuffle" />
+              <img src={Shuffle} alt="shuffle" />
             </div>
             <div>
-              <img
-                src="./assets/img/playerbuttons/Previous.png"
-                alt="previous"
-              />
+              <img src={Previous} alt="previous" />
             </div>
             <div>
-              <img src="./assets/img/playerbuttons/Play.png" alt="play" />
+              <img src={Play} alt="play" />
             </div>
             <div>
-              <img src="./assets/img/playerbuttons/Next.png" alt="next" />
+              <img src={Next} alt="next" />
             </div>
             <div>
-              <img src="./assets/img/playerbuttons/Repeat.png" alt="repeat" />
+              <img src={Repeat} alt="repeat" />
             </div>
           </div>
           <div className="progressContainer d-flex align-items-center">
